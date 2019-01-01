@@ -1,0 +1,17 @@
+#home {
+    height: 100vh;
+    .timer__content--holder {
+        .timer__content--main {
+            .timer__content--title {
+                font-size: 3em;
+                font-weight: $font-weight-bold;
+                @media screen and (min-width: $screen-xxs-min) and (max-width: $screen-xxs-max) {
+                    font-size: 2.6em;
+                }
+                @media screen and (min-width: $screen-xs-min) {
+                    font-size: 5em;
+                }
+            }
+        }
+    }
+}
