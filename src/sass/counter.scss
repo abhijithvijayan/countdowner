@@ -1,15 +1,18 @@
-#home {
+#counter {
     height: 100vh;
     .timer__content--holder {
         .timer__content--main {
             span {
-                font-size: 1.3em;
+                font-size: 1.1em;
                 letter-spacing: 0.2em;
-                font-weight: $font-weight-bold;
+                font-weight: $font-weight-semibold;
                 @media screen and (min-width: $screen-xxs-min) and (max-width: $screen-xxs-max) {
-                    font-size: 1em;
+                    font-size: 1.1em;
                 }
                 @media screen and (min-width: $screen-xs-min) {
+                    font-size: 1.0em;
+                }
+                @media screen and (min-width: $screen-md-min) {
                     font-size: 1.6em;
                 }
             }
