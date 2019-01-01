@@ -12,7 +12,7 @@ let countDowner = setInterval(() => {
     dateNow = new Date();
 
     // new Date(2014, 1, 1) creates a date for 2014-02-01 
-    dateFuture = new Date(new Date().getFullYear() +1, 0, 1);
+    dateFuture = new Date(new Date().getFullYear() + 1, 0, 1);
 
     seconds = Math.floor((dateFuture - dateNow) / 1000);
     cutoff = seconds;
@@ -25,7 +25,7 @@ let countDowner = setInterval(() => {
 
     if (cutoff <= 0) {
         clearInterval(countDowner);
-        document.getElementById(timer).textContent = "New Year Wishes!!";
+        document.getElementById(DOMStrings.timer).textContent = "New Year Wishes!!";
     }
     else {
         update(DOMStrings.daysCount, getTrueNumber(days));

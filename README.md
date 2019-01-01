@@ -20,6 +20,13 @@ run
 
 run `gulp build` to build files
 
+## Changing the countdown date:
+
+Update this line in `main.js`. Refer this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) for more details.
+```
+dateFuture = new Date(new Date().getFullYear() + 1, 0, 1);
+```
+
 ## References
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
