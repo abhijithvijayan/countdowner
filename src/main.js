@@ -72,6 +72,7 @@ let countdownCall = setInterval(() => {
     // stop timer
     if (countDownVal <= 0) {
         clearInterval(countdownCall);
+        document.getElementById('timer__content--inner').textContent = "New Year Wishes!!";
     } 
     else {
         UIController.updateUIElements(countdown);
